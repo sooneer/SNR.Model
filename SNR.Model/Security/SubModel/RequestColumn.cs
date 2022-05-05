@@ -56,5 +56,4 @@ public class RequestColumn_Filter
     public string? LocaleTR { get; set; }
 
     public string? LocaleEN { get; set; }
-
 }

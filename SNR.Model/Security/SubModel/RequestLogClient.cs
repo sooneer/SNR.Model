@@ -39,5 +39,4 @@ public class RequestLogClient_Filter
     public string? ShortMessage { get; set; }
 
     public string? ErrorMessage { get; set; }
-
 }

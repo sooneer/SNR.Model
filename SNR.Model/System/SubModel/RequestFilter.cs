@@ -60,5 +60,4 @@ public class RequestFilter_Filter
     public int FilterOrder { get; set; }
 
     public bool IsActive { get; set; }
-
 }

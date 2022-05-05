@@ -45,5 +45,4 @@ public class RequestCategory_Filter
     public int OrderNumber { get; set; }
 
     public int ParentId { get; set; }
-
 }

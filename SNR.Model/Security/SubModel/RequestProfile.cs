@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace SNR.Model;
 
-public class RequestUser : IValidatableObject
+public class RequestProfile_Save : IValidatableObject
 {
     [Min(0)]
     public int IdUser { get; set; }
@@ -39,30 +39,4 @@ public class RequestUser : IValidatableObject
 
         return results;
     }
-}
-
-public class RequestUser_Filter
-{
-    public int IdUser { get; set; }
-
-    public string? Name { get; set; }
-
-    public string? Surname { get; set; }
-
-    public string? UserName { get; set; }
-
-    public string? Email { get; set; }
-
-    public string? Password { get; set; }
-
-    public DateTime? LastLoginDate { get; set; }
-
-    public bool IsActive { get; set; }
-}
-
-public class RequestUser_EditRole
-{
-    public int IdRole { get; set; }
-    public int IdUser { get; set; }
-    public bool IsActive { get; set; }
 }

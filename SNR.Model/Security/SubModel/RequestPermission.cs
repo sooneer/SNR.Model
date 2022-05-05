@@ -54,5 +54,4 @@ public class RequestPermission_Filter
     public string? PermissionDescEN { get; set; }
 
     public bool IsGeneral { get; set; }
-
 }
