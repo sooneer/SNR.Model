@@ -6,6 +6,7 @@ public class SY_MENU : BaseModel
     [Key]
     public int IdMenu { get; set; }
 
+    public int IdApplication { get; set; }
     public int OrderNumber { get; set; }
     public string MenuName { get; set; }
     public string MenuNameEN { get; set; }

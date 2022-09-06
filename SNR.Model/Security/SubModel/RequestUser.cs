@@ -17,6 +17,9 @@ public class RequestUser : IValidatableObject
     [StringLength(50)]
     public string UserName { get; set; }
 
+    [StringLength(250)]
+    public string Picture { get; set; }
+
     [Required]
     [StringLength(50)]
     public string Email { get; set; }
@@ -24,6 +27,12 @@ public class RequestUser : IValidatableObject
     [Required]
     [StringLength(250)]
     public string Password { get; set; }
+
+    [Min(0)]
+    public int IdEmployee { get; set; }
+
+    [Min(0)]
+    public int IdCompany { get; set; }
 
     public bool IsActive { get; set; }
 
@@ -34,8 +43,11 @@ public class RequestUser : IValidatableObject
         Validator.TryValidateProperty(Name, new ValidationContext(this, null, null) { MemberName = "Name" }, results);
         Validator.TryValidateProperty(Surname, new ValidationContext(this, null, null) { MemberName = "Surname" }, results);
         Validator.TryValidateProperty(UserName, new ValidationContext(this, null, null) { MemberName = "UserName" }, results);
+        Validator.TryValidateProperty(Picture, new ValidationContext(this, null, null) { MemberName = "Picture" }, results);
         Validator.TryValidateProperty(Email, new ValidationContext(this, null, null) { MemberName = "Email" }, results);
         Validator.TryValidateProperty(Password, new ValidationContext(this, null, null) { MemberName = "Password" }, results);
+        Validator.TryValidateProperty(IdEmployee, new ValidationContext(this, null, null) { MemberName = "IdEmployee" }, results);
+        Validator.TryValidateProperty(IdCompany, new ValidationContext(this, null, null) { MemberName = "IdCompany" }, results);
 
         return results;
     }

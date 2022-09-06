@@ -28,7 +28,8 @@
     <RepositoryUrl>https://github.com/sooneer/SNR.Model</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>SNR;Model</PackageTags>
-    <Version>1.0.7</Version>
+    <Version>1.0.8-beta-6</Version>
+    <PackageReleaseNotes>GN_APPLICATION Added.</PackageReleaseNotes>
   </PropertyGroup>
 	
 	<ItemGroup>

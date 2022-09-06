@@ -17,11 +17,13 @@ public class ResponseInfo_GetUserInfo
 public class ResponseInfo_GetAllPermission
 {
     public int IdMenu { get; set; }
+    public int IdApplication { get; set; }
     public string MenuName { get; set; }
     public string MenuUrl { get; set; }
     public string MenuIcon { get; set; }
     public int ParentId { get; set; }
 
+    public int IdRole { get; set; }
     public bool IsView { get; set; }
     public bool IsNew { get; set; }
     public bool IsEdit { get; set; }

@@ -7,6 +7,9 @@ public class RequestMenu : IValidatableObject
     [Min(0)]
     public int IdMenu { get; set; }
 
+    [Min(1)]
+    public int IdApplication { get; set; }
+
     [Min(0)]
     public int OrderNumber { get; set; }
 
@@ -36,6 +39,7 @@ public class RequestMenu : IValidatableObject
     {
         var results = new List<ValidationResult>();
         Validator.TryValidateProperty(IdMenu, new ValidationContext(this, null, null) { MemberName = "IdMenu" }, results);
+        Validator.TryValidateProperty(IdApplication, new ValidationContext(this, null, null) { MemberName = "IdApplication" }, results);
         Validator.TryValidateProperty(OrderNumber, new ValidationContext(this, null, null) { MemberName = "OrderNumber" }, results);
         Validator.TryValidateProperty(ModuleName, new ValidationContext(this, null, null) { MemberName = "ModuleName" }, results);
         Validator.TryValidateProperty(MenuName, new ValidationContext(this, null, null) { MemberName = "MenuName" }, results);
